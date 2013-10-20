@@ -13,7 +13,7 @@ However, the board must have an Arduino Bootloader on it.
 Repository Contents
 -------------------
 * **/example** - example project
-* **/refereces** - refereces for the hardware
+* **/references** - refereces for the hardware
 * **/src** - code for a class to manage EL wire
 
 License Information
