@@ -49,7 +49,7 @@ void EL_Escudo::wire_init(uint8_t wires) {
 //    npne
 // DESCRIPTION:
 //    initializes all EL wires
-void EL_Escudo::wire_init_all(void) {
+void EL_Escudo::wire_init_all() {
    wire_init(A | B | C | D | E | F | G | H);
 }
 // PRIVATE FUNCTIONS END
@@ -139,7 +139,7 @@ void EL_Escudo::wire_fade_out(uint8_t wires) {
 //    none
 // DESCRIPTION:
 //    initializes the status indicator led
-void EL_Escudo::status_init(void) {
+void EL_Escudo::status_init() {
    DDRB |= _BV(DDB5);
    PORTB &= ~_BV(DDB5);
 }
@@ -151,7 +151,7 @@ void EL_Escudo::status_init(void) {
 //    none
 // DESCRIPTION:
 //    turns status indicator led on
-void EL_Escudo::status_on(void) {
+void EL_Escudo::status_on() {
    PORTB |= _BV(DDB5);
 }
 
@@ -162,7 +162,7 @@ void EL_Escudo::status_on(void) {
 //    none
 // DESCRIPTION:
 //    turns status indicator led off
-void EL_Escudo::status_off(void) {
+void EL_Escudo::status_off() {
    PORTB &= ~_BV(DDB5);
 }
 
@@ -173,6 +173,6 @@ void EL_Escudo::status_off(void) {
 //    none
 // DESCRIPTION:
 //    toggles status indicator led
-void EL_Escudo::status_toggle(void) {
+void EL_Escudo::status_toggle() {
    PORTB ^= _BV(DDB5);
 }
