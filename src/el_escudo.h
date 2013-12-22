@@ -25,18 +25,18 @@ class EL_Escudo {
       void delay_ms(uint16_t);
       void delay_us(uint16_t);
       void wire_init(uint8_t);
-      void wire_init_all(void);
+      void wire_init_all();
 
    public:
-      EL_Escudo(void);
+      EL_Escudo();
       void wire_on(uint8_t);
       void wire_off(uint8_t);
       void wire_fade_in(uint8_t);
       void wire_fade_out(uint8_t);
-      void status_init(void);
-      void status_on(void);
-      void status_off(void);
-      void status_toggle(void);
+      void status_init();
+      void status_on();
+      void status_off();
+      void status_toggle();
 };
 
 #endif
